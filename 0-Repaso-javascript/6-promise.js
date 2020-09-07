@@ -47,10 +47,8 @@ let obtenerPelicula = (id) => {
   })
 }
 
-obtenerPelicula(1).then(pelicula => {
+obtenerPelicula(5).then(pelicula => {
   console.log('Pelicula de base de datos', pelicula)
-}, err => {
-  console.log(err)
-})
+}).catch(err => {console.log(err)})
 
 
